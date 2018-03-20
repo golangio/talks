@@ -1,0 +1,174 @@
+Découvrir Go
+Make Programming Fun Again
+
+19 Mars 2018 – Meetup
+
+Vincent Letourneau
+Golang I/O
+
+http://golang.io/fr/
+@golangio
+
+* Introduction
+
+* Qu'est-ce que Go ?
+Go est un langage de programmation open source concurrent développé par Google.
+
+Simple, rapide et efficace.
+
+.image images/logo.svg 250 _
+
+* Hello, World
+
+.play code/hello.go
+
+* Historique
+
+* Historique
+
+- 2007, conception du projet.
+- 2008, le langage est pret et l'implémentation du compilateur fonctionne.
+- 2009, publication du projet open source.
+- 2012, sortie de Go 1 en version stable.
+
+* 
+
+.background images/authors.png
+
+* Pourquoi un nouveau langage ?
+
+* Pourquoi un nouveau langage ?
+
+Lors de la conception de Go, il n'y avait pas eu de nouveau langage depuis une décennie.
+
+Beaucoup de choses ont changées :
+
+- Bibliothèque tentaculaires et chaînes de dépendance
+- la montée en puissance des processeurs multi-coeurs
+- un réseau dominant
+- des clusters de serveurs massif
+
+Les principaux langages de systèmes n'ont pas été conçus avec tous ces facteurs.
+
+* Caractéristiques du langage
+
+Go c'est l'éfficacité d'un langage compilé statiquement typé avec la facilité de programmation d'un langage dynamique.
+
+Les points fort :
+
+- compilation rapide
+- ramasse miette sans latence
+- support la concurrence et la communication
+- naturellement parallèle
+- multi-plateforme
+- une librairie nativement riche (réseau, HTTP, template, crypto)
+
+* Caractéristiques du langage
+
+Les points faibles :
+
+- les générics
+- le gestionnaire de dépendances
+- le debogger
+- les erreurs pour certains
+
+* Prise en main
+
+* Prise en main
+
+    Ils ne sont pas capables de comprendre un langage brillant, mais nous voulons les amener à
+    réaliser de bons programmes.
+
+    Ainsi, le langage que nous leur donnons doit être facile à comprendre et facile à adopter.
+
+*Rob*Pike.*
+
+* Prise en main
+
+Go est un langage impératif, multi-paradigme et son apprentissage est rapide.
+
+En 25 mots :
+
+.image images/keywords.png 236 _
+
+* Prise en main
+
+Intégration partielle de la programmation orientée objet :
+
+- absence d'héritage ᕙ(⇀‸↼‶)ᕗ
+- composition via des interfaces (polymorphisme)
+- interface implémentée implicitement
+- assertion de type
+- gestionnaire d'exceptions
+
+* Prise en main
+
+Création d'une variable à typage statique
+
+    var name string
+    name = "Gopher"
+
+Création d'une variable à typage dynamique
+
+    name := "Gopher"
+
+* Prise en main
+
+Déclaration d'une fonction
+
+    func worker() {}
+
+Exécution non concurrente
+
+    worker()
+
+Exécution concurrente
+
+    go worker()
+
+* Exemple Goroutine
+
+.play code/routine.go
+
+* Go pour quelle application ?
+
+- système
+- cloud
+- micro services
+- serveur web
+- chat (socket)
+- mobile
+- jeux
+- Iot
+- MAO
+- ...
+
+* Qui utilise Go ?
+
+- CloudFlare
+- Docker
+- Drop Box
+- Google
+- Leboncoin
+- Netflix
+- Slack
+- SoundCloud
+- Zalando
+
+[[https://github.com/golang/go/wiki/GoUsers][Voir la liste complète]]
+
+* Le top 6 des frameworks Web 2017
+
+- Beego
+- Gin
+- Revel
+- Echo
+- Iris
+- Buffalo
+
+* Meetup Golang
+200 meetups sur la France
+
+- Whoman Who Go Paris
+- Golang Paris
+- Golang I/O
